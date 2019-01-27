@@ -12,8 +12,10 @@ class Song
   attr_accessor :name, :artist, :genre
   def self.genre_count
     genre_hash = {}
-    @@genres.each do |genre|
-      if genre_hash.has_key?
+    @@genres.each do |gen|
+      if genre_hash.has_key?(gen)
+        genre_hash[gen]
+      end
     end
   end
   
