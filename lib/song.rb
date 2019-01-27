@@ -15,9 +15,19 @@ class Song
     @@genres.each do |gen|
       if genre_hash.has_key?(gen)
         genre_hash[gen] += 1
-        
+      else 
+        genre_hash[gen] = 1
       end
     end
+    return genre_hash
   end
-  
+  def self.artist_count 
+    artist_arr = []
+    @@artists.each do |art|
+      if !artist_arr.include?(art)
+        artist_arr << art
+      end
+    end
+    return artist_arr
+  end
 end
