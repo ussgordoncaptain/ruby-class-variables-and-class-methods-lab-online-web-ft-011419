@@ -21,6 +21,17 @@ class Song
     end
     return genre_hash
   end
+  def self.artist_count
+    artist_hash = {}
+    @@artists.each do |gen|
+      if artist_hash.has_key?(gen)
+        artist_hash[gen] += 1
+      else 
+        artist_hash[gen] = 1
+      end
+    end
+    return artist_hash
+  end
   def self.artists 
     artist_arr = []
     @@artists.each do |art|
