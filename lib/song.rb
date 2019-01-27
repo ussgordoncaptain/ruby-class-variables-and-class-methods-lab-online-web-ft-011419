@@ -50,5 +50,7 @@ class Song
     end
     return genres_arr
   end
-  def 
+  def self.count
+    return @@count
+  end
 end
