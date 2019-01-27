@@ -3,4 +3,12 @@ class Song
   @@artists = []
   @@genres = []
   def initialize(name, artist, genre)
+    @@artists << artist
+    @name = name
+    @artist = artist
+    @genre = genre
+    @@genres << genres
+  end
+  attr_accessor :name, :artist, :genre
+  
 end
