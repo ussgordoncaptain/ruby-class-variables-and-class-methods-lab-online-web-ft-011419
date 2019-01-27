@@ -14,7 +14,8 @@ class Song
     genre_hash = {}
     @@genres.each do |gen|
       if genre_hash.has_key?(gen)
-        genre_hash[gen]
+        genre_hash[gen] += 1
+        
       end
     end
   end
