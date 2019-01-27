@@ -21,7 +21,7 @@ class Song
     end
     return genre_hash
   end
-  def self.artist_count 
+  def self.artists 
     artist_arr = []
     @@artists.each do |art|
       if !artist_arr.include?(art)
